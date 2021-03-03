@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: sans‑serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    height: 100vh;
+    margin: 0px auto;
+    background-color: antiquewhite;
+}
+
+header {
+    text-align: center;
+}
+
+.block-choice {
+    width: 100%;
+    /* height: 2vw; */
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.choice {
+    width: 50%;
+    min-width: 400px;
+    min-height: 200px;
+    background-color: aqua;
+}
+
+.statistic {
+    width: 50%;
+    min-width: 400px;
+    min-height: 200px;
+    background-color: aquamarine;
+}
+
+.block-question {
+    background-color: blue;
+    min-height: 100px;
+}
+
+.close {
+    display: none;
+}
+
+.block-list {
+    background-color: cornflowerblue;
+    min-height: 100px;
+}
+/* 
+. {
+
+}
+
+. {
+
+} */
