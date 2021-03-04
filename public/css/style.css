@@ -34,6 +34,62 @@ header {
     background-color: aqua;
 }
 
+.choice-button {
+    width: 30px;
+    height: 20px;
+}
+
+.choice ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 20px;
+    width: 240px;
+    background: #ebf5fc;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+                3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.choice  li {
+      position: relative;
+      list-style: none;
+      text-align: center;
+      margin: 15px;
+}
+.choice label {
+        position: relative; 
+        cursor: pointer;
+}
+
+.choice input[type="checkbox"] {
+          position: absolute;
+          opacity: 0;
+        }
+
+        .choice label:checked  .choice-button {
+          box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+                inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.choice-button {
+          width: 60px;
+          height: 60px;
+          background: #ebf5fc;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+                3px 3px 5px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          
+        }
+      }
+    }
+  }
+
 .statistic {
     width: 50%;
     /* min-width: 400px; */
