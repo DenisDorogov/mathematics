@@ -27,15 +27,16 @@ header {
 }
 
 .choice {
+   
     width: 50%;
-    min-width: 400px;
+    /* min-width: 400px; */
     min-height: 200px;
     background-color: aqua;
 }
 
 .statistic {
     width: 50%;
-    min-width: 400px;
+    /* min-width: 400px; */
     min-height: 200px;
     background-color: aquamarine;
 }
@@ -61,3 +62,16 @@ header {
 . {
 
 } */
+
+@media screen and (max-width: 600px) {
+    .choice {
+   
+        width: 100vw;
+        min-width: 360px;
+    }
+    
+    .statistic {
+        width: 100vw;
+        min-width: 360px;
+    }
+}
