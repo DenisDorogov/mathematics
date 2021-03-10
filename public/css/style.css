@@ -4,7 +4,7 @@
 }
 
 .body {
-    font-family: sans‑serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
 }
 
@@ -12,11 +12,15 @@
     max-width: 800px;
     height: 100vh;
     margin: 0px auto;
-    background-color: antiquewhite;
+    background-color: #1C1C1E;
+    font-family: "Roboto Condensed","Arial Narrow",Arial,sans-serif;
+    color: #F9F5E1;
 }
 
 header {
     text-align: center;
+    height: 50px;
+    padding-top: 10px;
 }
 
 .block-choice {
@@ -27,74 +31,124 @@ header {
 }
 
 .choice {
-   
     width: 50%;
-    /* min-width: 400px; */
     min-height: 200px;
-    background-color: aqua;
+    /* background-color: #F9F5E1; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
-.choice-button {
-    width: 30px;
-    height: 20px;
+.choice h2 {
+    margin-top: 10px;
 }
 
-.choice ul {
+.choice-course {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border-radius: 10px;
-    padding: 20px;
-    width: 240px;
-    background: #ebf5fc;
-    box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
-                3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.choice  li {
+.choice-course-row {
+
+}
+
+.choice-course li {
       position: relative;
       list-style: none;
       text-align: center;
       margin: 15px;
 }
-.choice label {
+.choice-course li label {
         position: relative; 
         cursor: pointer;
 }
 
-.choice input[type="checkbox"] {
+.choice-course li label input[type="checkbox"] {
           position: absolute;
           opacity: 0;
         }
 
-        .choice label:checked  .choice-button {
+.choice-course li label input:checked ~ .choice-button {
           box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
                 inset 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .choice-button {
-          width: 60px;
+          width: 160px;
           height: 60px;
-          background: #ebf5fc;
+          /* background: #ebf5fc; */
           display: flex;
           justify-content: center;
           align-items: center;
-          box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
-                3px 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 3px 3px 5px rgba(0, 0, 0, 0.1);
           border-radius: 10px;
           
         }
-      }
+
+.choice-difficulty {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        }
+.choice-difficulty-row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 190px;
+}
+
+.choice-difficulty-row li {
+    position: relative;
+      list-style: none;
+      text-align: center;
+      margin: 15px;
+}
+
+.choice-difficulty-row li label {
+    position: relative; 
+    cursor: pointer;
+}
+
+.choice-difficulty-row li label input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
     }
-  }
+
+.choice-difficulty-row li label input:checked ~ .choice-difficulty-btn {
+      box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+            inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.choice-difficulty-btn {
+    /* width: 60px; */
+    /* height: 60px; */
+    /* background: #ebf5fc; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 3px 3px 5px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 10px; */
+}
+
 
 .statistic {
     width: 50%;
     /* min-width: 400px; */
     min-height: 200px;
-    background-color: aquamarine;
+    background-color: #1C1C1E;
+    text-align: center;
+}
+
+.statistic h2 {
+    margin-top: 10px;
 }
 
 .block-question {
@@ -124,6 +178,9 @@ header {
    
         width: 100vw;
         min-width: 360px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     
     .statistic {
