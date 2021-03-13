@@ -32,36 +32,37 @@ header {
 
 .choice {
     width: 50%;
+    padding-left: 10px;
     min-height: 200px;
     /* background-color: #F9F5E1; */
-    text-align: center;
+    text-align: left;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
 
 }
 
 .choice h2 {
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .choice-course {
     position: relative;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-wrap: wrap;
 }
 
 .choice-course-row {
-
+    /* margin-left: 10px; */
 }
 
 .choice-course li {
       position: relative;
       list-style: none;
       text-align: center;
-      margin: 15px;
+      margin: 10px;
 }
 .choice-course li label {
         position: relative; 
@@ -74,26 +75,36 @@ header {
         }
 
 .choice-course li label input:checked ~ .choice-button {
-          box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
-                inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+          /* box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+                inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
+                color:#fffbed;
+}
+
+.choice-course li label input:hover ~ .choice-button {
+    /* box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+          inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
+          color:#fab81b;
 }
 
 .choice-button {
           width: 160px;
-          height: 60px;
+          /* height: 60px; */
           /* background: #ebf5fc; */
           display: flex;
-          justify-content: center;
-          align-items: center;
-          box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 3px 3px 5px rgba(0, 0, 0, 0.1);
-          border-radius: 10px;
+          /* justify-content: center;
+          align-items: center; */
+          color: #aaaaab;
+          font-size: 20px;
+          font-weight: 700;
+          /* box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 3px 3px 5px rgba(0, 0, 0, 0.1); */
+          /* border-radius: 10px; */
           
         }
 
 .choice-difficulty {
         display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
+        /* justify-content: center; */
+        flex-flow: row nowrap;
         }
 .choice-difficulty-row {
     position: relative;
@@ -105,26 +116,33 @@ header {
     width: 190px;
 }
 
-.choice-difficulty-row li {
+.choice-difficulty li {
     position: relative;
       list-style: none;
       text-align: center;
       margin: 15px;
 }
 
-.choice-difficulty-row li label {
+.choice-difficulty li label {
     position: relative; 
     cursor: pointer;
 }
 
-.choice-difficulty-row li label input[type="checkbox"] {
+.choice-difficulty li label input {
       position: absolute;
       opacity: 0;
     }
 
-.choice-difficulty-row li label input:checked ~ .choice-difficulty-btn {
-      box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
-            inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+.choice-difficulty li label input:checked ~ .choice-difficulty-btn {
+      /* box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+            inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
+            color: #fffbed;
+}
+
+.choice-difficulty li label input:hover ~ .choice-difficulty-btn {
+    /* box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+          inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
+          color: #fab81b;
 }
 
 .choice-difficulty-btn {
@@ -134,6 +152,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #aaaaab;
+    font-size: 20px;
+    font-weight: 700;
     /* box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 3px 3px 5px rgba(0, 0, 0, 0.1); */
     /* border-radius: 10px; */
 }
