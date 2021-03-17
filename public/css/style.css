@@ -31,7 +31,7 @@ header {
 }
 
 .choice {
-    width: 50%;
+    width: 49%;
     padding-left: 10px;
     min-height: 200px;
     /* background-color: #F9F5E1; */
@@ -161,7 +161,7 @@ header {
 
 
 .statistic {
-    width: 50%;
+    width: 49%;
     /* min-width: 400px; */
     min-height: 200px;
     background-color: #1C1C1E;
