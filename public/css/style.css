@@ -169,8 +169,78 @@ header {
 }
 
 .statistic h2 {
-    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #e9e2bf;
+    margin: 10px auto 23px;
 }
+
+.statistic ul {
+    border-top: 2px solid #333335;
+    margin-bottom: 23px;
+}
+
+.statistic ul li {
+    height: 31px;
+    display: -ms-flexbox;
+    display: flex;
+    /* -ms-flex-align: center; */
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    line-height: normal;
+    border-bottom: 1px solid #333335;
+    color: #a29e87;
+    padding: 0 5px;
+}
+
+.statistic ul li span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    /* -ms-flex: 1; */
+    /* flex: 1; */
+    margin-right: 10px;
+}
+
+.statistic ul li span:nth-child(1) {
+    /* min-width: 60%; */
+    text-align: left;
+    justify-self:flex-start; 
+    margin-right: auto;
+}
+
+.statistic ul li span:nth-child(2) {
+    min-width: 80px;
+}
+
+.statistic ul li span:nth-child(3) {
+    min-width: 26px; 
+    height: 26px;
+}
+
+.rank-m {
+    background-image: url("../img/rank_m.png");
+    background-size: 100% 100%;
+}
+
+.rank-01 {
+    background-image: url("../img/rank_01.png");
+    background-size: 100% 100%;
+}
+
+.rank-02 {
+    background-image: url("../img/rank_02.png");
+    background-size: 100% 100%;
+}
+
+.rank-03 {
+    background-image: url("../img/rank_03.png");
+    background-size: 100% 100%;
+}
+
 
 .block-question {
     background-color: blue;
