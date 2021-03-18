@@ -10,7 +10,7 @@
 
 .container {
     max-width: 800px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px auto;
     background-color: #1C1C1E;
     font-family: "Roboto Condensed","Arial Narrow",Arial,sans-serif;
@@ -21,6 +21,7 @@ header {
     text-align: center;
     height: 50px;
     padding-top: 10px;
+    min-width: 400px;
 }
 
 .block-choice {
@@ -44,6 +45,11 @@ header {
 
 .choice h2 {
     margin: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #e9e2bf;
+    margin: 10px 10px 23px;
 }
 
 .choice-course {
@@ -54,8 +60,8 @@ header {
     flex-wrap: wrap;
 }
 
-.choice-course-row {
-    /* margin-left: 10px; */
+.choice-course-row:nth-child(3) {
+    margin-bottom: 23px;
 }
 
 .choice-course li {
@@ -165,7 +171,7 @@ header {
     /* min-width: 400px; */
     min-height: 200px;
     background-color: #1C1C1E;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .statistic h2 {
@@ -173,7 +179,7 @@ header {
     font-weight: 400;
     line-height: 25px;
     color: #e9e2bf;
-    margin: 10px auto 23px;
+    margin: 10px 5px 23px;
 }
 
 .statistic ul {
@@ -213,7 +219,8 @@ header {
 }
 
 .statistic ul li span:nth-child(2) {
-    min-width: 80px;
+    min-width: 40px;
+    margin-right: 10%;
 }
 
 .statistic ul li span:nth-child(3) {
@@ -243,9 +250,101 @@ header {
 
 
 .block-question {
-    background-color: blue;
+    padding: 20px 10%; 
     min-height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
 }
+
+.question {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 500px;
+    justify-content: flex-end;
+    /* padding-right: 10%; */
+}
+
+.question-text {
+    font-family: "WarheliosBold_Web","Arial Narrow",Tahoma,arial,sans-serif;
+    color: #fff;
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: normal;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+
+    margin-right: 20px;
+}
+
+.question-input {
+    height: 50px;
+    font-size: 17px;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: "WarheliosRegular_Web","Arial Narrow",Tahoma,arial,sans-serif;
+    background: rgba(0,0,0,0.7);
+    border: solid 1px rgba(102,102,102,0.7);
+    border-radius: 1px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 48px;
+    line-height: 48px;
+    height: 50px;
+    width: 30%;
+    min-width: 200px;
+    padding: 12px 20px;
+    opacity: 1;
+    transition: background-color .2s,border-color .2s,color .2s;
+
+    margin-bottom: 10px;
+}
+
+.question-button {
+    font-family: WarheliosBold_Web,Arial Narrow,Tahoma,arial,sans-serif;
+    background-color: #f26402;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 27px;
+    height: 35px;
+    position: relative;
+    font-size: 13px;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: color .2s,width .2s,font-size .2s,background-color .2s;
+
+    padding: 0 46px;
+    height: 50px;
+    font: 17px WarheliosBold_Web,Arial Narrow,Tahoma,arial,sans-serif;
+    line-height: 50px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.question-button:hover {
+    background-color: #f78c03;
+    color: #fff;
+    text-decoration: none;
+}
+
+.question-button:active {
+    -webkit-animation-name: enter;
+    animation-name: enter;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+}
+
+
 
 .close {
     display: none;
@@ -264,18 +363,28 @@ header {
 
 } */
 
-@media screen and (max-width: 600px) {
+@media ( max-width: 600px ) {
     .choice {
-   
-        width: 100vw;
-        min-width: 360px;
+        width: 100%;
+        /* min-width: 360px; */
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
     
     .statistic {
-        width: 100vw;
-        min-width: 360px;
+        width: 100%;
+        /* min-width: 360px; */
     }
+}
+
+@keyframes enter {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.98);
+    }
+    100% {
+        transform: scale(1);
 }
