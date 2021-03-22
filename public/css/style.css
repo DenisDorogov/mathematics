@@ -26,7 +26,6 @@ header {
 
 .block-choice {
     width: 100%;
-    /* height: 2vw; */
     display:flex;
     flex-flow: row wrap;
 }
@@ -35,7 +34,6 @@ header {
     width: 49%;
     padding-left: 10px;
     min-height: 200px;
-    /* background-color: #F9F5E1; */
     text-align: left;
     display: flex;
     justify-content: start;
@@ -55,7 +53,6 @@ header {
 .choice-course {
     position: relative;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-wrap: wrap;
 }
@@ -81,35 +78,27 @@ header {
         }
 
 .choice-course li label input:checked ~ .choice-button {
-          /* box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
                 inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
                 color:#fffbed;
 }
 
 .choice-course li label input:hover ~ .choice-button {
-    /* box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
           inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
           color:#fab81b;
 }
 
 .choice-button {
           width: 160px;
-          /* height: 60px; */
-          /* background: #ebf5fc; */
           display: flex;
-          /* justify-content: center;
           align-items: center; */
           color: #aaaaab;
           font-size: 20px;
           font-weight: 700;
-          /* box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 3px 3px 5px rgba(0, 0, 0, 0.1); */
-          /* border-radius: 10px; */
           
         }
 
 .choice-difficulty {
         display: flex;
-        /* justify-content: center; */
         flex-flow: row nowrap;
         }
 .choice-difficulty-row {
@@ -140,38 +129,29 @@ header {
     }
 
 .choice-difficulty li label input:checked ~ .choice-difficulty-btn {
-      /* box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
             inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
             color: #fffbed;
 }
 
 .choice-difficulty li label input:hover ~ .choice-difficulty-btn {
-    /* box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
           inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
           color: #fab81b;
 }
 
 .choice-difficulty-btn {
-    /* width: 60px; */
-    /* height: 60px; */
-    /* background: #ebf5fc; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: #aaaaab;
     font-size: 20px;
     font-weight: 700;
-    /* box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 3px 3px 5px rgba(0, 0, 0, 0.1); */
-    /* border-radius: 10px; */
 }
 
 
 .statistic {
     width: 49%;
-    /* min-width: 400px; */
     min-height: 200px;
     background-color: #1C1C1E;
-    /* text-align: center; */
 }
 
 .statistic h2 {
@@ -191,7 +171,6 @@ header {
     height: 31px;
     display: -ms-flexbox;
     display: flex;
-    /* -ms-flex-align: center; */
     justify-content: flex-end;
     align-items: center;
     font-size: 14px;
@@ -206,13 +185,10 @@ header {
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 100%;
-    /* -ms-flex: 1; */
-    /* flex: 1; */
     margin-right: 10px;
 }
 
 .statistic ul li span:nth-child(1) {
-    /* min-width: 60%; */
     text-align: left;
     justify-self:flex-start; 
     margin-right: auto;
@@ -263,10 +239,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: 40px auto;
-    /* max-width: 700px; */
-    /* width: 80%; */
     justify-content: center;
-    /* padding-right: 10%; */
 }
 
 .question-text {
@@ -278,7 +251,6 @@ header {
     letter-spacing: -1.6px;
     text-transform: uppercase;
 
-    /* margin-right: 20px; */
     width: 33%;
     min-width: 200px;
 }
@@ -300,7 +272,6 @@ header {
     height: 50px;
     width: 33%;
     min-width: 200px;
-    /* min-width: 200px; */
     padding: 12px 20px;
     opacity: 1;
     transition: background-color .2s,border-color .2s,color .2s;
@@ -356,12 +327,9 @@ header {
 }
 
 .block-list {
-    /* background-color: cornflowerblue; */
     min-height: 100px;
     padding: 30px 20px;
     color: #e9e2bf;
-
-
 }
 
 .block-list ul {
@@ -374,14 +342,11 @@ header {
 
 .result-espression {
     line-height: 48px;
-    /* background-color: cornflowerblue; */
     width: 18%;
     min-width: 135px;
     border-top: 1px solid #333335;
     padding-left: 10px;
     list-style-type: none;
-    /* border-left: 10px #66af4c; */
-    /* height: 48px; */
 }
 
 .result-espression:hover {
@@ -409,24 +374,12 @@ header {
 }
 .result-error:hover {
     color: #f25322;
-    /* background-image: linear-gradient(to right,rgba(102,175,76,.13) 0%,transparent 63%); */
-    /* border-color: rgba(90,148,69,.2); */
     border-left: solid 4px #f25322;
-    /* padding-left: 6px; */
 }
-/* 
-. {
-
-}
-
-. {
-
-} */
 
 @media ( max-width: 600px ) {
     .choice {
         width: 100%;
-        /* min-width: 360px; */
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -434,7 +387,6 @@ header {
     
     .statistic {
         width: 100%;
-        /* min-width: 360px; */
     }
 
     .block-list ul {
