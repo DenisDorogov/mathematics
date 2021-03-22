@@ -263,8 +263,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: 40px auto;
-    max-width: 500px;
-    justify-content: flex-end;
+    /* max-width: 700px; */
+    /* width: 80%; */
+    justify-content: center;
     /* padding-right: 10%; */
 }
 
@@ -277,7 +278,9 @@ header {
     letter-spacing: -1.6px;
     text-transform: uppercase;
 
-    margin-right: 20px;
+    /* margin-right: 20px; */
+    width: 33%;
+    min-width: 200px;
 }
 
 .question-input {
@@ -295,8 +298,9 @@ header {
     font-size: 48px;
     line-height: 48px;
     height: 50px;
-    width: 30%;
+    width: 33%;
     min-width: 200px;
+    /* min-width: 200px; */
     padding: 12px 20px;
     opacity: 1;
     transition: background-color .2s,border-color .2s,color .2s;
@@ -327,7 +331,8 @@ header {
     height: 50px;
     font: 17px WarheliosBold_Web,Arial Narrow,Tahoma,arial,sans-serif;
     line-height: 50px;
-    width: 200px;
+    width: 66%;
+    max-width: 600px;
     margin-left: 10px;
 }
 
@@ -351,8 +356,63 @@ header {
 }
 
 .block-list {
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     min-height: 100px;
+    padding: 30px 10px;
+    color: #e9e2bf;
+
+
+}
+
+.block-list ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    max-height: 500px;
+}
+
+.result-espression {
+    line-height: 48px;
+    /* background-color: cornflowerblue; */
+    width: 18%;
+    min-width: 135px;
+    border-top: 1px solid #333335;
+    padding-left: 10px;
+    list-style-type: none;
+    /* border-left: 10px #66af4c; */
+    /* height: 48px; */
+}
+
+.result-espression:hover {
+    color: #66af4c;
+    background-image: linear-gradient(to right,rgba(102,175,76,.13) 0%,transparent 63%);
+    border-color: rgba(90,148,69,.2);
+    border-left: solid 4px #66af4c;
+    padding-left: 6px;
+}
+
+.result-espression span:nth-child(1) {
+    margin-right: 12px;
+}
+
+.result-espression span:nth-child(3) {
+    float: right;
+    background-image: url('../img/check-mark.png');
+    height: 24px;
+    width: 24px;
+    background-size: 100% 100%;
+    margin-top: 12px;
+}
+.result-error span:nth-child(3) {
+    background-image: url('../img/x-mark.png')
+}
+.result-error:hover {
+    color: #f25322;
+    /* background-image: linear-gradient(to right,rgba(102,175,76,.13) 0%,transparent 63%); */
+    /* border-color: rgba(90,148,69,.2); */
+    border-left: solid 4px #f25322;
+    /* padding-left: 6px; */
 }
 /* 
 . {
@@ -375,6 +435,10 @@ header {
     .statistic {
         width: 100%;
         /* min-width: 360px; */
+    }
+
+    .block-list ul {
+        max-height: 1000px;
     }
 }
 
