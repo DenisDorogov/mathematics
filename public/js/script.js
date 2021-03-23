@@ -1,1 +1,2 @@
-alert("Hello");
+let storage = new Output();
+storage.outputStatistics();

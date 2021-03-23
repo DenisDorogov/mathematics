@@ -1,0 +1,35 @@
+const STORAGE_DEFAULT = {
+    name: 'worldofmathematics',
+    user: 'default',
+    currentCourse: 'summ',
+    currentDifficulty: '1',
+    summ: {
+        lastDate: Date.now(),
+        lastTime: undefined,
+        countAttempts: 0,
+        averageResult: 0,
+        lastResult: 0,
+    },
+    diff: {
+        lastDate: Date.now(),
+        lastTime: undefined,
+        countAttempts: 0,
+        averageResult: 0,
+        lastResult: 0,
+    },
+    mult: {
+        lastDate: Date.now(),
+        lastTime: undefined,
+        countAttempts: 0,
+        averageResult: 0,
+        lastResult: 0,
+    },
+    div: {
+        lastDate: Date.now(),
+        lastTime: undefined,
+        countAttempts: 0,
+        averageResult: 0,
+        lastResult: 0,
+    },
+    resetDate: Date.now(),
+}
