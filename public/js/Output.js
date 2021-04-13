@@ -5,18 +5,17 @@ class Output extends Statistics {
         console.log('Output');
     };
 
-    // outputStatistics() {
-    //     let parent = document.getElementById('stat-list');
-    //     console.log(parent.children());
-    // }
+    outputStatistics() {
+        let parent = document.getElementById('stat-list');
+    }
 
-    // outputTask() {
+    outputTask() {
 
-    // }
+    }
 
-    // outputResultList() {
+    outputResultList() {
 
-    // }
+    }
 
     
 
