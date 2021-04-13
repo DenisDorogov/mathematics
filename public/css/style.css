@@ -78,19 +78,19 @@ header {
         }
 
 .choice-course li label input:checked ~ .choice-button {
-                inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
+                inset 3px 3px 5px rgba(0, 0, 0, 0.1);
                 color:#fffbed;
 }
 
 .choice-course li label input:hover ~ .choice-button {
-          inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
+          inset 3px 3px 5px rgba(0, 0, 0, 0.1);
           color:#fab81b;
 }
 
 .choice-button {
           width: 160px;
           display: flex;
-          align-items: center; */
+          align-items: center;
           color: #aaaaab;
           font-size: 20px;
           font-weight: 700;
@@ -129,12 +129,12 @@ header {
     }
 
 .choice-difficulty li label input:checked ~ .choice-difficulty-btn {
-            inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
-            color: #fffbed;
+            inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+            color: #fffdf7;
 }
 
 .choice-difficulty li label input:hover ~ .choice-difficulty-btn {
-          inset 3px 3px 5px rgba(0, 0, 0, 0.1); */
+          inset 3px 3px 5px rgba(0, 0, 0, 0.1);
           color: #fab81b;
 }
 
