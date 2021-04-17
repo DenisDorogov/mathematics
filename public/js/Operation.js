@@ -62,11 +62,9 @@ class Operation {
         for ( let i = this.operandMax; i >= this.operandMin; i--) {
             for (let j = 2; j <= 10; j++) {
                 this.arrayExamples.push([i * j + ' / ' + i, j ]);
-                console.log(i * j + ' / ' + i + ' = ' + j);
             }
         }
         this.arrayExamples = this.cropArray(this.arrayExamples);
-        console.log(this.arrayExamples);
     }
 
     cropArray(array) {
