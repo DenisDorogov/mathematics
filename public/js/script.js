@@ -1,6 +1,4 @@
 let storage = new Output();
 storage.outputStatistics();
 
-let operation = new Operation('summ', 1);
-
-PARAMS.difficulty['summ'][0]
+let operation = new Operation('div', 3);

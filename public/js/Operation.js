@@ -5,6 +5,10 @@ class Operation {
     operandMin;
 
     constructor(type, difficultLevel = 1, courses) {
+        this.countExamples = difficultLevel * 10;
+        this.operandMin = PARAMS.difficulty[type][difficultLevel-1][0];
+        this.operandMax = PARAMS.difficulty[type][difficultLevel-1][1];
+
         switch (type) {
             case 'summ':
                 this.getArraySumm(difficultLevel);
@@ -24,33 +28,54 @@ class Operation {
             default:
                 break;
         }
-        this.countExamples = difficultLevel * 10;
-        this.operandMin = PARAMS.difficulty[type][difficultLevel][0];
-        this.operandMax = PARAMS.difficulty[type][difficultLevel][1];
     }
 
     getArraySumm(level) {
         for ( let i = this.operandMax; i > this.operandMin; i--) {
+            console.log(i);
             for (let j = 1; j < i; j++) {
                 this.arrayExamples.push([i - j + ' + ' + j, i ]);
             }
         }
-
-        console.log(this.operandMax);
-        console.log(this.operandMin);
-        console.log(this.arrayExamples);
-
+        this.arrayExamples = this.cropArray(this.arrayExamples);
     }
 
     getArrayDiff(level) {
-
+        for ( let i = this.operandMax; i > this.operandMin; i--) {
+            for (let j = 1; j < i; j++) {
+                this.arrayExamples.push([i + ' - ' + j, i - j ]);
+            }
+        }
+        this.arrayExamples = this.cropArray(this.arrayExamples);
     }
 
     getArrayMult(level) {
-
+        for ( let i = this.operandMax; i >= this.operandMin; i--) {
+            for (let j = 2; j <= 10; j++) {
+                this.arrayExamples.push([i + ' * ' + j, i * j ]);
+            }
+        }
+        this.arrayExamples = this.cropArray(this.arrayExamples);
     }
 
     getArrayDiv(level) {
+        for ( let i = this.operandMax; i >= this.operandMin; i--) {
+            for (let j = 2; j <= 10; j++) {
+                this.arrayExamples.push([i * j + ' / ' + i, j ]);
+                console.log(i * j + ' / ' + i + ' = ' + j);
+            }
+        }
+        this.arrayExamples = this.cropArray(this.arrayExamples);
+        console.log(this.arrayExamples);
+    }
 
+    cropArray(array) {
+        let resultArr = [];
+        let lenghtArr = array.length-1;
+        for (let i = 1; i <= this.countExamples; i++) {
+            let n =  Math.floor(Math.random() * lenghtArr--);
+            resultArr.push( array.splice(n, 1));
+        }
+        return resultArr;
     }
 }
