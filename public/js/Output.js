@@ -1,22 +1,19 @@
 class Output extends Statistics {
-    
-    constructor() {
-        super();
-        console.log('Output');
-    };
 
-    outputStatistics() {
-        let parent = document.getElementById('stat-list');
-    }
+	constructor() {
+		super();
+		console.log('Output');
+	};
 
-    outputTask() {
-	let parent = document.getElementById('block-question');
-    }
+	outputStatistics() {
+		let parent = document.getElementById('stat-list');
+	};
 
-    outputResultList() {
+	outputTask() {
+		let parent = document.getElementById('block-question');
+	};
 
-    }
-
-    
-
+	outputResultList() {
+		let parent = document.getElementById('block-list');
+	}; 
 }
