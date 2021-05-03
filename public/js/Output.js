@@ -10,7 +10,7 @@ class Output extends Statistics {
     }
 
     outputTask() {
-
+	let parent = document.getElementById('block-question');
     }
 
     outputResultList() {
