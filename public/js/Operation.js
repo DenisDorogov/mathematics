@@ -30,9 +30,8 @@ class Operation {
         }
     }
 
-    getArraySumm(level) {
+    getArraySumm() {
         for ( let i = this.operandMax; i > this.operandMin; i--) {
-            console.log(i);
             for (let j = 1; j < i; j++) {
                 this.arrayExamples.push([i - j + ' + ' + j, i ]);
             }
@@ -40,7 +39,7 @@ class Operation {
         this.arrayExamples = this.cropArray(this.arrayExamples);
     }
 
-    getArrayDiff(level) {
+    getArrayDiff() {
         for ( let i = this.operandMax; i > this.operandMin; i--) {
             for (let j = 1; j < i; j++) {
                 this.arrayExamples.push([i + ' - ' + j, i - j ]);
@@ -49,7 +48,7 @@ class Operation {
         this.arrayExamples = this.cropArray(this.arrayExamples);
     }
 
-    getArrayMult(level) {
+    getArrayMult() {
         for ( let i = this.operandMax; i >= this.operandMin; i--) {
             for (let j = 2; j <= 10; j++) {
                 this.arrayExamples.push([i + ' * ' + j, i * j ]);
@@ -58,7 +57,7 @@ class Operation {
         this.arrayExamples = this.cropArray(this.arrayExamples);
     }
 
-    getArrayDiv(level) {
+    getArrayDiv() {
         for ( let i = this.operandMax; i >= this.operandMin; i--) {
             for (let j = 2; j <= 10; j++) {
                 this.arrayExamples.push([i * j + ' / ' + i, j ]);

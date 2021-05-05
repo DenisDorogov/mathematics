@@ -7,7 +7,6 @@ class Statistics extends Storage {
 
     constructor() {
         super();
-        console.log('Statistic');
         let currentCourse = this.data.currentCourse;
         this.lastResult = this.data[currentCourse].lastResult;
         this.lastTime = this.data[currentCourse].lastTime;
